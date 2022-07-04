@@ -18,4 +18,6 @@ if [ ! -e $gitignore]; then
     echo "Setting gitignore_global"
 fi
 
+git config --global init.defaultBranch main
+
 echo "Install Completed"
