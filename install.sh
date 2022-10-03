@@ -11,7 +11,7 @@ fi
 
 # gitignoreのグローバル設定
 gitignore="~/.gitignore_global"
-if [ ! -e $gitignore]; then
+if [ ! -e $gitignore ]; then
     ln -s ~/dotfiles/.gitignore_global ~
     echo "gitignore_global copied"
     git config --global core.excludesfile ~/.gitignore_global
