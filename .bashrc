@@ -13,5 +13,7 @@ function gdiff-title() {
     git diff --name-only $defaultBranch
 }
 
+alias la='ls -a'
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/bashrc.post.bash" ]] && builtin source "$HOME/.fig/shell/bashrc.post.bash"
