@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Processing",
+			"command": "processing-java",
+			"type": "process",
+			"args": [
+				"--force",
+				"--sketch=${fileDirname}",
+				"--run"
+			],
+			"group": {
+		  		"kind": "build",
+		  		"isDefault": true
+			}
+		}
+	]
+}
