@@ -2,41 +2,28 @@
 
 echo "Install Start"
 
-# bashの設定ファイル
-bashrc="$HOME/.bashrc"
-if [ ! -e $bashrc ]; then
-    ln -s $HOME/dotfiles/.bashrc $HOME
-    echo "bashrc copied"
-fi
+# Homebrewのインストール
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew update
 
-bashprofile="$HOME/.bash_profile"
-if [ ! -e $bashprofile ]; then
-    ln -s $HOME/dotfiles/.bash_profile $HOME
-    echo "bash_profile copied"
-fi
+brew install git
+brew install docker
 
-# zshの設定ファイル
-zshrc="$HOME/.zshrc"
-if [ ! -e $zshrc ]; then
-    ln -s $HOME/dotfiles/.zshrc $HOME
-    echo "zshrc copied"
-fi
+brew install --cask docker
 
-zprofile="$HOME/.zprofile"
-if [ ! -e $zprofile ]; then
-    ln -s $HOME/dotfiles/.zprofile $HOME
-    echo "zprofile copied"
-fi
+# JetBrains
+brew install --cask android-studio
+brew install --cask intellij-idea
 
-# gitignoreのグローバル設定
-gitignore="$HOME/.gitignore_global"
-if [ ! -e $gitignore ]; then
-    ln -s $HOME/dotfiles/.gitignore_global $HOME
-    echo "gitignore_global copied"
-    git config --global core.excludesfile $HOME/.gitignore_global
-    echo "Setting gitignore_global"
-fi
+# VSCode
+brew install --cask visual-studio-code
 
-git config --global init.defaultBranch main
+# Tools
+brew install --cask discord
+brew install --cask slack
+brew install --cask google-chrome
+brew install --cask obsidian
+brew install --cask postman
+brew install --cask figma
 
 echo "Install Completed"
