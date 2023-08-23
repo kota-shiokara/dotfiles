@@ -2,5 +2,5 @@
 my dotfiles
 
 ```sh
-curl https://raw.githubusercontent.com/kota-shiokara/dotfiles/master/install.sh | zsh
+curl https://raw.githubusercontent.com/kota-shiokara/dotfiles/main/install.sh | zsh
 ```
