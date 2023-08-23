@@ -2,11 +2,27 @@
 echo "Install Start"
 
 # Homebrewのインストール
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew update
 
 brew install git
 brew install docker
+
+# anyenv
+brew install anyenv
+yes | anyenv install --init
+anyenv install nodenv
+eval "$(anyenv init -)"
+exec $SHELL -l
+
+nodenv install 20.5.1
+nodenv global 20.5.1
+
+# sdk
+curl -s "https://get.sdkman.io" | zsh
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java 20.0.2-zulu
+sdk default java 20.0.2-zulu
 
 brew install --cask docker
 
@@ -25,5 +41,7 @@ brew install --cask obsidian
 brew install --cask postman
 brew install --cask figma
 brew install --cask fig
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
 echo "Install Completed"
