@@ -1,5 +1,4 @@
 #!/bin/sh
-
 echo "Install Start"
 
 # Homebrewのインストール
@@ -25,5 +24,6 @@ brew install --cask google-chrome
 brew install --cask obsidian
 brew install --cask postman
 brew install --cask figma
+brew install --cask fig
 
 echo "Install Completed"
