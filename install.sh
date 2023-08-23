@@ -2,7 +2,7 @@
 echo "Install Start"
 
 # Homebrewのインストール
-# /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | /bin/zsh
 brew update
 
 brew install git
