@@ -6,7 +6,7 @@ echo "Install Start"
 brew update
 
 brew install git
-brew install docker
+# brew install docker : caskでDocker Desktopを入れるときには、CLIを入れなくて良い
 
 # anyenv
 brew install anyenv
@@ -37,6 +37,7 @@ brew install --cask visual-studio-code
 brew install --cask discord
 brew install --cask slack
 brew install --cask google-chrome
+brew install --cask google-drive
 brew install --cask obsidian
 brew install --cask postman
 brew install --cask figma
