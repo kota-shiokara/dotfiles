@@ -42,6 +42,8 @@ brew install --cask obsidian
 brew install --cask postman
 brew install --cask figma
 brew install --cask fig
+brew install --cask zoom
+brew install --cask zotero
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
