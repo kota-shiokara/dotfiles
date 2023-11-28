@@ -45,6 +45,8 @@ brew install --cask fig
 brew install --cask zoom
 brew install --cask zotero
 brew install --cask vysor
+brew install --cask simple-web-server
+brew install --cask notion
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
