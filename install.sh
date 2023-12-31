@@ -8,6 +8,8 @@ brew update
 brew install git
 # brew install docker : caskでDocker Desktopを入れるときには、CLIを入れなくて良い
 
+brew install terminal-notifier
+
 # anyenv
 brew install anyenv
 yes | anyenv install --init

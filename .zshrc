@@ -20,7 +20,9 @@ path=(
 autoload -Uz compinit && compinit
 zstyle ':completion:*:(cd|less):*' matcher 'm:{a-z}={A-Z}'
 
-source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if [ -f $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+    source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
 # SDKMAN
 export SDKMAN_DIR="$HOME/.sdkman"
