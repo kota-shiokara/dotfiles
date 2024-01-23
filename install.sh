@@ -49,6 +49,7 @@ brew install --cask zotero
 brew install --cask vysor
 brew install --cask simple-web-server
 brew install --cask notion
+brew install --cask spotify
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
