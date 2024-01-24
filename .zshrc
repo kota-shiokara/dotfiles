@@ -34,6 +34,8 @@ autoload -Uz colors && colors
 PROMPT="%F{green}%n%f %F{cyan}%3~%f $ "
 
 alias ls="ls -a"
+# 現在のディレクトリの絶対パスをクリップボードにコピー
+alias cdir="printf "%s" "$(pwd)" | pbcopy"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
