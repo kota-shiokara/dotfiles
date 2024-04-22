@@ -25,6 +25,9 @@ curl -s "https://get.sdkman.io" | zsh
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install java 20.0.2-zulu
 sdk default java 20.0.2-zulu
+sdk install kotlin
+
+brew install vim
 
 brew install --cask docker
 

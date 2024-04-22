@@ -14,6 +14,7 @@ path=(
     /usr/local/bin(N-/)
     /usr/local/sbin(N-/)
     /Library/Apple/usr/bin
+    '/Applications/IntelliJ IDEA.app/Contents/MacOS'
 )
 
 # 補完を有効に
@@ -31,11 +32,11 @@ export SDKMAN_DIR="$HOME/.sdkman"
 eval "$(anyenv init -)"
 
 autoload -Uz colors && colors
-PROMPT="%F{green}%n%f %F{cyan}%3~%f $ "
+PROMPT="%F{cyan}%3~%f $ "
 
 alias ls="ls -a"
 # 現在のディレクトリの絶対パスをクリップボードにコピー
-alias cdir="printf "%s" "$(pwd)" | pbcopy"
+alias cdir="echo -n "$(pwd)" | pbcopy"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
