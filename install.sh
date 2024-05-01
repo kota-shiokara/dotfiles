@@ -32,8 +32,7 @@ brew install vim
 brew install --cask docker
 
 # JetBrains
-brew install --cask android-studio
-brew install --cask intellij-idea
+brew install --cask jetbrains-toolbox
 
 # VSCode
 brew install --cask visual-studio-code

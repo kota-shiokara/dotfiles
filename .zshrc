@@ -14,7 +14,7 @@ path=(
     /usr/local/bin(N-/)
     /usr/local/sbin(N-/)
     /Library/Apple/usr/bin
-    '/Applications/IntelliJ IDEA.app/Contents/MacOS'
+    '/Users/ikanoshiokara/Library/Application Support/JetBrains/Toolbox/scripts'
 )
 
 # 補完を有効に
