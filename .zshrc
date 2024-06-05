@@ -37,7 +37,7 @@ PROMPT="%F{cyan}%3~%f $ "
 alias ls="ls -a"
 # 現在のディレクトリの絶対パスをクリップボードにコピー
 alias cdir="echo -n "$(pwd)" | pbcopy"
-alias gbclean="git branch | grep -v \"main|develop\" | xargs -n 1 git branch -d"
+alias gbclean="git branch | grep -v \"main\" | grep -v \"develop\" | xargs -n 1 git branch -d"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
