@@ -34,8 +34,9 @@ brew install --cask docker
 # JetBrains
 brew install --cask jetbrains-toolbox
 
-# VSCode
+# Microsoft
 brew install --cask visual-studio-code
+brew install --cask devtoys
 
 # Tools
 brew install --cask discord
