@@ -31,14 +31,17 @@ if [ ! -e $zprofile ]; then
 fi
 
 # gitignoreのグローバル設定
-gitignore="$HOME/.gitignore_global"
+gitignore="$HOME/.config/git/ignore"
 if [ ! -e $gitignore ]; then
-    ln -s $SCRIPT_DIR/.gitignore_global $HOME
-    echo "gitignore_global copied"
-    git config --global core.excludesfile $HOME/.gitignore_global
-    echo "Setting gitignore_global"
+    cp $SCRIPT_DIR/ignore $HOME/.config/git
+    echo "gitignore copied"
 fi
 
-git config --global init.defaultBranch main
+# gitconfigの設定
+gitconfig="$HOME/.gitconfig"
+if [ ! -e $gitconfig ]; then
+    cp $SCRIPT_DIR/.gitconfig $HOME
+    echo "gitconfig copied"
+fi
 
 echo "Settings Completed"
